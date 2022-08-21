@@ -60,6 +60,7 @@
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
   --off-white: #E9EAEC;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -148,15 +149,15 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--light-yellow);
-  color: var(--off-white);
+  background: var(--white-2);
+  color: var(--eerie-black-1);
 }
 
 :focus { outline-color: var(--light-yellow); }
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--off-white); }
+body { background: var(--smoky-black); }
 
 
 
@@ -594,16 +595,6 @@ main {
 .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
-}
-
-.testimonials-avatar-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(15px, -25px);
-  background: var(--bg-gradient-onyx);
-  border-radius: 14px;
-  box-shadow: var(--shadow-1);
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -1425,7 +1416,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .testimonials-title { margin-bottom: -10px; }
 
   .testimonials-list {
     gap: 30px;
@@ -1439,16 +1430,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
-    transform: translate(30px, -30px);
-    border-radius: 20px;
-  }
-
   .testimonials-avatar-box img { width: 80px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
   }
 
   .testimonials-text {
@@ -1474,13 +1459,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     flex-direction: column;
     align-items: center;
   }
-
-  .modal-avatar-box {
-    border-radius: 18px;
-    margin-bottom: 0;
-  }
-
-  .modal-avatar-box img { width: 65px; }
 
   .modal-img-wrapper > img {
     display: block;
