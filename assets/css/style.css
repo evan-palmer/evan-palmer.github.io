@@ -486,13 +486,12 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -1260,7 +1259,15 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 350px) {
+
+  /**
+  * Main
+  **/
+  main {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
 
   /**
    * client
@@ -1276,6 +1283,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+  .content-card {
+    padding: 30px;
+    padding-top: 25px;
+  }
+
+  .content-card time {
+    font-size: var(--fs-6);
+    color: var(--light-gray-70);
+    font-weight: var(--fw-300);
+    margin-bottom: 5px;
+    margin-top: -5px;
+  }
 
 }
 
@@ -1345,7 +1365,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 100px;
   }
 
@@ -1404,7 +1424,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { border-radius: 0px 0px 0 0; }
 
   .navbar-list { gap: 20px; }
 
@@ -1446,19 +1466,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0 -30px;
     padding: 30px;
     padding-bottom: 35px;
-  }
-
-  .content-card {
-    padding: 30px;
-    padding-top: 25px;
-  }
-
-  .content-card time {
-    font-size: var(--fs-6);
-    color: var(--light-gray-70);
-    font-weight: var(--fw-300);
-    margin-bottom: 5px;
-    margin-top: -5px;
   }
 
   .testimonials-item-title {
@@ -1614,8 +1621,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 35px;
     max-width: 680px;
   }
-
-  .modal-avatar-box img { width: 80px; }
 
 
 
