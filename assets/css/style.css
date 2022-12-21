@@ -63,17 +63,18 @@
 
   /* --blue-grey: #c8e8fd; */
   --blue-grey: hsla(209, 81%, 59%, 0.10);
-  --dark-blue: #024d69;
-  --tan: #f3e8df;
+  --dark-blue: hsl(196, 96%, 21%);
+  --tan: hsl(27, 45%, 91%);
   --tan-30: hsla(27, 45%, 91%, 0.3);
-  --light-blue-grey: #72b4d5;
-  --off-white: #fafafa;
+  --light-blue-grey: hsl(200, 54%, 64%);
+  --off-white: hsl(0, 0%, 98%);
   --white-1: hsl(0, 0%, 100%);
-  --purple-blue: #182650;
-  --light-blue: #50aad7;
-  --light-blue-70: hsla(200, 96%, 40%, 0.05);
-  --ocean-blue: #0495cb;
-  --light-gray: #5b6d8d;
+  --purple-blue: hsl(225, 54%, 20%);
+  --light-blue: hsl(200, 63%, 58%);
+  --ocean-blue: hsl(196, 96%, 41%);
+  --ocean-blue-05: hsla(200, 96%, 40%, 0.05);
+  --super-light-gray: hsla(0, 0%, 88%, 0.6);
+  --light-gray: hsl(218, 22%, 45%);
   --light-gray-70: hsla(218, 23%, 44%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -274,7 +275,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--tan);
+  background: var(--super-light-gray);
   border-radius: 5px;
 }
 
@@ -299,7 +300,7 @@ article.active {
 
 .content-card:hover {
   content: "";
-  background: var(--light-blue-70);
+  background: var(--ocean-blue-05);
   transition: all var(--transition-4);
   border-radius: inherit;
   border-radius: 14px;
