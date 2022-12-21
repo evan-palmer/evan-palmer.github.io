@@ -1244,7 +1244,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
+ * responsive larger than 350px screen
  */
 
 @media (min-width: 350px) {
@@ -1286,6 +1286,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: -5px;
   }
 
+  .avatar-box { border-radius: 30px; }
+
+  .avatar-box img { 
+    width: 80px;
+    overflow: hidden; 
+    border-radius: 10px; 
+  }
+
+  .sidebar.active .show-contact-icon { transform: rotate(0.5turn); }
 }
 
 
