@@ -64,7 +64,6 @@
   /* --blue-grey: #c8e8fd; */
   --blue-grey: hsla(209, 81%, 59%, 0.10);
   --dark-blue: hsl(196, 96%, 21%);
-  --tan: hsl(27, 45%, 91%);
   --tan-30: hsla(27, 45%, 91%, 0.3);
   --light-blue-grey: hsl(200, 54%, 64%);
   --off-white: hsl(0, 0%, 99%);
@@ -72,7 +71,7 @@
   --purple-blue: hsl(225, 54%, 20%);
   --light-blue: hsl(200, 63%, 58%);
   --ocean-blue: hsl(196, 96%, 41%);
-  --ocean-blue-05: hsla(200, 96%, 40%, 0.05);
+  --ocean-blue-02: hsla(200, 96%, 40%, 0.02);
   --super-light-gray: hsla(0, 0%, 88%, 0.6);
   --light-gray: hsl(218, 22%, 45%);
   --light-gray-70: hsla(218, 23%, 44%, 0.7);
@@ -227,7 +226,6 @@ article {
   align-items: center;
   font-size: 16px;
   color: var(--off-white);
-  box-shadow: var(--shadow-elevation-medium);
   z-index: 1;
 }
 
@@ -308,7 +306,7 @@ article.active {
 
 .content-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--oce);
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -320,7 +318,7 @@ article.active {
 
 .content-card:hover {
   content: "";
-  background: var(--ocean-blue-05);
+  background: var(--ocean-blue-02);
   transition: all var(--transition-4);
   border-radius: inherit;
   border-radius: 14px;
@@ -663,7 +661,7 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: hsl(0, 0%, 5%);
+  background: hsl(0, 0%, 15%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -684,7 +682,6 @@ main {
   margin: 15px 12px;
   border: 1px solid var(--blue-grey);
   border-radius: 14px;
-  box-shadow: var(--shadow-6);
   transform: scale(1.2);
   opacity: 0;
   transition: var(--transition-1);
@@ -992,6 +989,7 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 .project-img::before {
