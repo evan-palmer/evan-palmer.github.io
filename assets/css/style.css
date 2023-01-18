@@ -302,7 +302,7 @@ article.active {
   border-radius: 5px;
 }
 
-.has-scrollbar::-webkit-scrollbar-button { width: 20px; }
+.has-scrollbar::-webkit-scrollbar-button { width: 20px;  }
 
 .content-card {
   position: relative;
@@ -912,7 +912,6 @@ main {
 }
 
 .filter-select {
-  background: var(--eerie-black-2);
   color: var(--light-gray);
   display: flex;
   justify-content: space-between;
@@ -949,7 +948,6 @@ main {
 }
 
 .select-item button {
-  background: var(--eerie-black-2);
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1004,12 +1002,12 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before { background: hsla(0, 0%, 15%, 0.3); }
 
 .project-item-icon-box {
   --scale: 0.8;
 
-  background: var(--blue-grey);
+  background: var(--dark-blue);
   color: var(--light-blue);
   position: absolute;
   top: 50%;
@@ -1834,14 +1832,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--off-white);
-    background: var(--light-blue);
+    background: hsla(0, 0%, 85%, 0.8);
     border-radius: 20px;
     transition: all 0.15s ease-out;
   }
 
   body::-webkit-scrollbar-thumb:hover { 
-    background: var(--light-blue-grey); 
-    transition: all var(--transition-2);
+    background: hsla(0, 0%, 75%, 0.8); 
+    transition: all var(--transition-4);
   }
 
   body::-webkit-scrollbar-button { height: 60px; }
