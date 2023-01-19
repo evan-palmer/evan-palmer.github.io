@@ -66,7 +66,7 @@
   --dark-blue: hsl(196, 96%, 21%);
   --tan-30: hsla(27, 45%, 91%, 0.3);
   --light-blue-grey: hsl(200, 54%, 64%);
-  --off-white: hsl(0, 0%, 99%);
+  --off-white: hsl(0, 0%, 100%);
   --white-1: hsl(0, 0%, 100%);
   --purple-blue: hsl(225, 54%, 20%);
   --light-blue: hsl(200, 63%, 58%);
@@ -987,6 +987,7 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  border: 1px solid var(--blue-grey);
   box-shadow: var(--shadow-elevation-medium);
 }
 
@@ -1438,7 +1439,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar { border-radius: 0px 0px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  .navbar-list { 
+    gap: 20px;
+  }
 
   .navbar-link { --fs-8: 14px; }
 
@@ -1757,7 +1760,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .navbar {
     position: absolute;
     bottom: auto;
-    top: 0;
+    top: 1px;
     left: auto;
     right: 0;
     width: max-content;
