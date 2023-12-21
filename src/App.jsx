@@ -1,7 +1,7 @@
 import React from "react";
 import About from "./views/About.jsx";
 import Publications from "./views/Publications.jsx";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 // Styles
@@ -11,12 +11,12 @@ import theme from "./theme/index";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/publications" element={<Publications />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   );
 }
