@@ -1,0 +1,26 @@
+{
+  "name": "Website",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.rulers": [80],
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "Perkovec.emoji"
+      ]
+    }
+  }
+}
