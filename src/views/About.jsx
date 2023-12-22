@@ -12,6 +12,27 @@ import profile from "../assets/images/profile.jpg";
 import Page from "../components/Page";
 
 function About() {
+  function ResponsiveText({ children }) {
+    return (
+      <Text
+        fontSize={{
+          base: "calc(16px + 6 * ((100vw - 320px) / (680)))",
+          md: "1.3rem",
+        }}
+        lineHeight={{
+          base: "24px",
+          md: "32px",
+        }}
+        marginBottom={{
+          base: "24px",
+          md: "30px",
+        }}
+      >
+        {children}
+      </Text>
+    );
+  }
+
   return (
     <Page title="👋🏻 Hi, I'm Evan!">
       <Grid
@@ -21,14 +42,7 @@ function About() {
         marginBottom="5vh"
       >
         <GridItem w="100%">
-          <Text
-            fontSize={{
-              base: "calc(18px + 6 * ((100vw - 320px) / (680)))",
-              md: "1.3rem",
-            }}
-            lineHeight="32px"
-            marginBottom="30px"
-          >
+          <ResponsiveText>
             I'm an{" "}
             <Link
               color={useColorModeValue("triadic.700")}
@@ -40,8 +54,18 @@ function About() {
             >
               NDSEG Fellow
             </Link>{" "}
-            and a Robotics Ph.D. Student at Oregon State University where I'm
-            advised by{" "}
+            and a Robotics Ph.D. Student at{" "}
+            <Link
+              color="#d73f09"
+              href="https://engineering.oregonstate.edu/CoRIS"
+              _hover={{
+                color: "#d9673f",
+              }}
+              isExternal
+            >
+              Oregon State University
+            </Link>{" "}
+            where I'm advised by{" "}
             <Link
               color={useColorModeValue("analogous.700")}
               href="https://engineering.oregonstate.edu/people/geoff-hollinger"
@@ -55,20 +79,13 @@ function About() {
             . The goal of my research is to create safe motion planning and
             control algorithms for robots that operate in challenging
             environments and to deploy these algorithms into the real world.
-          </Text>
-          <Text
-            fontSize={{
-              base: "calc(18px + 6 * ((100vw - 320px) / (680)))",
-              md: "1.3rem",
-            }}
-            lineHeight="32px"
-            marginBottom="30px"
-          >
+          </ResponsiveText>
+          <ResponsiveText>
             If I'm not in the lab working on my latest idea, you can find me
             outdoors, training to hit a new PR in the gym, or playing video
             games with my friends.
-          </Text>
-          <Text
+          </ResponsiveText>
+          <ResponsiveText
             fontSize={{
               base: "calc(18px + 6 * ((100vw - 320px) / (680)))",
               md: "1.3rem",
@@ -87,7 +104,7 @@ function About() {
             >
               contact me!
             </Link>
-          </Text>
+          </ResponsiveText>
         </GridItem>
         <GridItem w="100%">
           <Center>

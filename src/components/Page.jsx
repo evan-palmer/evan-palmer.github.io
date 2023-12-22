@@ -6,7 +6,7 @@ import Title from "./Title";
 
 function Page({ title, children }) {
   return (
-    <Flex h="100%" w="85%" flexDirection="column" margin="0 auto">
+    <Flex h="100%" w="82%" flexDirection="column" margin="0 auto">
       <Navbar />
       <Title content={title} />
       {children}
