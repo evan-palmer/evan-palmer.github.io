@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, List } from "@chakra-ui/react";
+import { Box, Text, List, Flex } from "@chakra-ui/react";
 import Publication from "../components/Publication";
 import Page from "../components/Page";
 
@@ -18,7 +18,26 @@ function Section({ title, papers }) {
       </Text>
       <List spacing={4}>
         {papers.map((paper, index) => (
-          <Publication key={index} paper={paper} />
+          <Flex>
+            <Text
+              lineHeight={{
+                base: "24px",
+                md: "30px",
+              }}
+              marginBottom={{
+                base: "2px",
+              }}
+              fontSize={{
+                base: "calc(12px + 5 * ((100vw - 320px) / (680)))",
+                md: "1.1rem",
+              }}
+              marginRight={{ base: "0.9rem", md: "1.1rem" }}
+              marginTop="1.1vh"
+            >
+              {index + 1}.
+            </Text>
+            <Publication key={index} paper={paper} />
+          </Flex>
         ))}
       </List>
     </Box>
