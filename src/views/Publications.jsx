@@ -16,7 +16,7 @@ function Section({ title, papers }) {
       >
         {title}
       </Text>
-      <List spacing={4}>
+      <List spacing={4} marginTop="1vh">
         {papers.map((paper, index) => (
           <Flex>
             <Text
@@ -27,12 +27,12 @@ function Section({ title, papers }) {
               marginBottom={{
                 base: "2px",
               }}
+              fontWeight="500"
               fontSize={{
                 base: "calc(12px + 5 * ((100vw - 320px) / (680)))",
                 md: "1.1rem",
               }}
               marginRight={{ base: "0.9rem", md: "1.1rem" }}
-              marginTop="1.1vh"
             >
               {index + 1}.
             </Text>

@@ -125,7 +125,7 @@ function Publication({ paper }) {
   const textColor = useColorModeValue("greyscale.50");
 
   return (
-    <Box marginTop="1vh">
+    <Box>
       <Title>{paper.title}</Title>
       <Authors>{paper.authors}</Authors>
       <Venue
