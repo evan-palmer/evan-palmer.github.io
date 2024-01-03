@@ -27,7 +27,6 @@ function Section({ title, papers }) {
               marginBottom={{
                 base: "2px",
               }}
-              fontWeight="500"
               fontSize={{
                 base: "calc(12px + 5 * ((100vw - 320px) / (680)))",
                 md: "1.1rem",

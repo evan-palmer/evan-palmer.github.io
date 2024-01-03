@@ -15,7 +15,6 @@ import Logo from "../assets/images/logo.svg";
 
 const Links = [
   { title: "About", dest: "/" },
-  // { title: "Projects", dest: "/projects" },
   { title: "Publications", dest: "/publications" },
 ];
 

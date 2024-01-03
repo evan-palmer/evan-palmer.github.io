@@ -1,8 +1,22 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Title from "./Title";
+
+function Title({ content }) {
+  return (
+    <Text
+      fontSize={{
+        base: "calc(36px + 36* ((100vw - 320px) / 680))",
+        lg: "4rem",
+      }}
+      fontWeight="600"
+      marginTop="5vh"
+    >
+      {content}
+    </Text>
+  );
+}
 
 function Page({ title, children }) {
   return (
