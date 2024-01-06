@@ -1,14 +1,17 @@
-import React from "react";
+/* eslint-disable react/no-array-index-key */
 import {
   Box,
-  Text,
-  Link,
-  useColorModeValue,
   Button,
   HStack,
-} from "@chakra-ui/react";
+  Link,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import React from 'react';
 
-function PublicationButton({ href, label, bgColor, hoverColor, textColor }) {
+function PublicationButton({
+  href, label, bgColor, hoverColor, textColor,
+}) {
   return (
     <Link href={href} isExternal>
       <Button
@@ -21,8 +24,8 @@ function PublicationButton({ href, label, bgColor, hoverColor, textColor }) {
         size="sm"
         marginTop="7px"
         fontSize={{
-          base: "calc(12px + 6 * ((100vw - 320px) / (680)))",
-          md: "1rem",
+          base: 'calc(12px + 6 * ((100vw - 320px) / (680)))',
+          md: '1rem',
         }}
       >
         {label}
@@ -35,18 +38,18 @@ function Title({ children }) {
   return (
     <Text
       lineHeight={{
-        base: "24px",
-        md: "30px",
+        base: '24px',
+        md: '30px',
       }}
       marginBottom={{
-        base: "2px",
+        base: '2px',
       }}
       fontSize={{
-        base: "calc(16px + 6 * ((100vw - 320px) / (680)))",
-        md: "1.3rem",
+        base: 'calc(16px + 6 * ((100vw - 320px) / (680)))',
+        md: '1.3rem',
       }}
       fontWeight="500"
-      color={useColorModeValue("primary.800")}
+      color={useColorModeValue('primary.800')}
     >
       {children}
     </Text>
@@ -55,45 +58,44 @@ function Title({ children }) {
 
 function Authors({ children }) {
   // Bold your name and add an 'and' before the last author
-  const formatAuthorsList = (authors, yourName) => {
-    return authors.map((author, index) => {
-      const isMe = author === yourName;
-      const isLast = index === authors.length - 1;
+  const formatAuthorsList = (authors, yourName) => authors.map((author, index) => {
+    const isMe = author === yourName;
+    const isLast = index === authors.length - 1;
 
-      if (isLast) {
-        return (
-          <span key={index}>
-            and{" "}
-            <Text as="span" fontWeight={isMe ? "600" : "400"}>
-              {author}
-            </Text>
-          </span>
-        );
-      } else {
-        return (
-          <span key={index}>
-            <Text as="span" fontWeight={isMe ? "600" : "400"}>
-              {author}
-            </Text>
-            ,{" "}
-          </span>
-        );
-      }
-    });
-  };
+    if (isLast) {
+      return (
+        <span key={index}>
+          and
+          {' '}
+          <Text as="span" fontWeight={isMe ? '600' : '400'}>
+            {author}
+          </Text>
+        </span>
+      );
+    }
+    return (
+      <span key={index}>
+        <Text as="span" fontWeight={isMe ? '600' : '400'}>
+          {author}
+        </Text>
+        ,
+        {' '}
+      </span>
+    );
+  });
 
   return (
     <Text
       fontSize={{
-        base: "calc(14px + 6 * ((100vw - 320px) / (680)))",
-        md: "1.2rem",
+        base: 'calc(14px + 6 * ((100vw - 320px) / (680)))',
+        md: '1.2rem',
       }}
       lineHeight={{
-        base: "24px",
-        md: "30px",
+        base: '24px',
+        md: '30px',
       }}
     >
-      {formatAuthorsList(children, "Evan Palmer")}
+      {formatAuthorsList(children, 'Evan Palmer')}
     </Text>
   );
 }
@@ -102,27 +104,30 @@ function Venue({ venue, date, underReview }) {
   return (
     <Text
       fontSize={{
-        base: "calc(14px + 6 * ((100vw - 320px) / (680)))",
-        md: "1.2rem",
+        base: 'calc(14px + 6 * ((100vw - 320px) / (680)))',
+        md: '1.2rem',
       }}
       lineHeight={{
-        base: "24px",
-        md: "30px",
+        base: '24px',
+        md: '30px',
       }}
     >
-      <i>{venue}</i>, {date}
-      <i>{underReview ? ", Under Review" : ""}</i>
+      <i>{venue}</i>
+      ,
+      {' '}
+      {date}
+      <i>{underReview ? ', Under Review' : ''}</i>
     </Text>
   );
 }
 
 function Publication({ paper }) {
   // Button Colors
-  const doiBtnBgColor = useColorModeValue("primary.800");
-  const doiBtnHoverColor = useColorModeValue("primary.600");
-  const pdfBtnColor = useColorModeValue("triadic.700");
-  const pdfBtnHoverColor = useColorModeValue("triadic.600");
-  const textColor = useColorModeValue("greyscale.50");
+  const doiBtnBgColor = useColorModeValue('primary.800');
+  const doiBtnHoverColor = useColorModeValue('primary.600');
+  const pdfBtnColor = useColorModeValue('triadic.700');
+  const pdfBtnHoverColor = useColorModeValue('triadic.600');
+  const textColor = useColorModeValue('greyscale.50');
 
   return (
     <Box>

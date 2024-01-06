@@ -1,18 +1,21 @@
-import React from "react";
-import { Flex, Link, useColorModeValue, HStack } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
-import { SiGooglescholar, SiGmail } from "react-icons/si";
-import { FaLinkedinIn } from "react-icons/fa6";
+import {
+  Flex, HStack,
+  Link, useColorModeValue,
+} from '@chakra-ui/react';
+import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa6';
+import { SiGmail, SiGooglescholar } from 'react-icons/si';
 
 function SocialLink({ href, icon: Icon, size = 25 }) {
   return (
     <Link
-      color={useColorModeValue("greyscale.700")}
+      color={useColorModeValue('greyscale.700')}
       href={href}
       _hover={{
-        color: useColorModeValue("greyscale.900"),
-        transitionDuration: "0.3s",
-        transitionTimingFunction: "ease-in-out",
+        color: useColorModeValue('greyscale.900'),
+        transitionDuration: '0.3s',
+        transitionTimingFunction: 'ease-in-out',
       }}
       isExternal
     >
@@ -24,7 +27,7 @@ function SocialLink({ href, icon: Icon, size = 25 }) {
 function Footer() {
   return (
     <Flex
-      bg={useColorModeValue("greyscale.50")}
+      bg={useColorModeValue('greyscale.50')}
       marginTop="5vh"
       marginBottom="4vh"
       alignItems="start"
