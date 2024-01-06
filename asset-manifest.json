@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fbb1a4a.css",
-    "main.js": "/static/js/main.59edf02f.js",
+    "main.js": "/static/js/main.459e774c.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/2022_RAL_Kunde_Proficiency.pdf": "/static/media/2022_RAL_Kunde_Proficiency.f68ff42a171696ccb7e5.pdf",
     "static/media/profile.jpg": "/static/media/profile.457fafce08dfb61b4d47.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/static/media/logo.2d564dc9e866cd86e71146c82c44d9ad.svg",
     "index.html": "/index.html",
     "main.2fbb1a4a.css.map": "/static/css/main.2fbb1a4a.css.map",
-    "main.59edf02f.js.map": "/static/js/main.59edf02f.js.map",
+    "main.459e774c.js.map": "/static/js/main.459e774c.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fbb1a4a.css",
-    "static/js/main.59edf02f.js"
+    "static/js/main.459e774c.js"
   ]
 }
