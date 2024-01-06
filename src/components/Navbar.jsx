@@ -57,12 +57,6 @@ function NavLink({ link }) {
 }
 
 function Resume() {
-  ReactGA.send({
-    hitType: 'pageview',
-    page: '/resume',
-    title: 'Resume',
-  });
-
   return (
     <Button
       as="a"
@@ -84,6 +78,13 @@ function Resume() {
       marginLeft={{ base: '3vw' }}
       padding={0}
       href={Cv}
+      onClick={
+        ReactGA.send({
+          hitType: 'pageview',
+          page: '/resume',
+          title: 'Resume',
+        })
+      }
     >
       Resume
     </Button>
