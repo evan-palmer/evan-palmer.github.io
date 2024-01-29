@@ -100,7 +100,9 @@ function Authors({ children }) {
   );
 }
 
-function Venue({ venue, date, underReview }) {
+function Venue({
+  venue, date, underReview, toAppear,
+}) {
   return (
     <Text
       fontSize={{
@@ -117,6 +119,7 @@ function Venue({ venue, date, underReview }) {
       {' '}
       {date}
       <i>{underReview ? ', Under Review' : ''}</i>
+      <i>{toAppear ? ', To Appear' : ''}</i>
     </Text>
   );
 }
@@ -137,6 +140,7 @@ function Publication({ paper }) {
         venue={paper.venue}
         date={paper.year}
         underReview={paper.underReview}
+        toAppear={paper.toAppear}
       />
       <HStack spacing={3}>
         {paper.doi && (

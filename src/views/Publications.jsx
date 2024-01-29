@@ -68,15 +68,7 @@ function Publications() {
       authors: ['Evan Palmer', 'Christopher Holm', 'Geoffrey Hollinger'],
       venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
       year: '2024',
-      underReview: true,
-    },
-    {
-      title:
-        'The Coupling Effect: Experimental Validation of the Fusion of Fossen and Featherstone to Simulate UVMS Dynamics in Julia',
-      authors: ['Hannah Kolano', 'Evan Palmer', 'Joseph Davidson'],
-      venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
-      year: '2024',
-      underReview: true,
+      toAppear: true,
     },
   ];
 
