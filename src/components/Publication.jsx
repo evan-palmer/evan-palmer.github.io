@@ -49,7 +49,7 @@ function Title({ children }) {
         md: '1.3rem',
       }}
       fontWeight="500"
-      color={useColorModeValue('primary.800')}
+      color={useColorModeValue('greyscale.900')}
     >
       {children}
     </Text>
@@ -126,10 +126,8 @@ function Venue({
 
 function Publication({ paper }) {
   // Button Colors
-  const doiBtnBgColor = useColorModeValue('primary.800');
-  const doiBtnHoverColor = useColorModeValue('primary.600');
-  const pdfBtnColor = useColorModeValue('triadic.700');
-  const pdfBtnHoverColor = useColorModeValue('triadic.600');
+  const btnBgColor = useColorModeValue('primary.800');
+  const btnHoverColor = useColorModeValue('primary.600');
   const textColor = useColorModeValue('greyscale.50');
 
   return (
@@ -147,8 +145,8 @@ function Publication({ paper }) {
           <PublicationButton
             href={paper.doi}
             label="DOI"
-            bgColor={doiBtnBgColor}
-            hoverColor={doiBtnHoverColor}
+            bgColor={btnBgColor}
+            hoverColor={btnHoverColor}
             textColor={textColor}
           />
         )}
@@ -156,8 +154,8 @@ function Publication({ paper }) {
           <PublicationButton
             href={paper.pdf}
             label="PDF"
-            bgColor={pdfBtnColor}
-            hoverColor={pdfBtnHoverColor}
+            bgColor={btnBgColor}
+            hoverColor={btnHoverColor}
             textColor={textColor}
           />
         )}

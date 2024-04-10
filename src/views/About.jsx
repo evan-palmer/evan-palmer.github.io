@@ -54,36 +54,24 @@ function About() {
             I&apos;m an
             {' '}
             <Link
-              color={useColorModeValue('triadic.700')}
+              color={useColorModeValue('primary.800')}
               href="https://ndseg.org/"
               _hover={{
-                color: useColorModeValue('triadic.400'),
+                color: useColorModeValue('primary.600'),
               }}
               isExternal
             >
               NDSEG Fellow
             </Link>
             {' '}
-            and a Robotics Ph.D. Student at
+            and a Robotics Ph.D. Student at Oregon State University where
+            I&apos;m advised by
             {' '}
             <Link
-              color="#d73f09"
-              href="https://engineering.oregonstate.edu/CoRIS"
-              _hover={{
-                color: '#d9673f',
-              }}
-              isExternal
-            >
-              Oregon State University
-            </Link>
-            {' '}
-            where I&apos;m advised by
-            {' '}
-            <Link
-              color={useColorModeValue('analogous.700')}
+              color={useColorModeValue('primary.800')}
               href="https://engineering.oregonstate.edu/people/geoff-hollinger"
               _hover={{
-                color: useColorModeValue('analogous.500'),
+                color: useColorModeValue('primary.600'),
               }}
               isExternal
             >
@@ -110,10 +98,10 @@ function About() {
             to
             {' '}
             <Link
-              color={useColorModeValue('primary.600')}
+              color={useColorModeValue('primary.800')}
               href="mailto:palmeeva@oregonstate.edu"
               _hover={{
-                color: useColorModeValue('primary.400'),
+                color: useColorModeValue('primary.600'),
               }}
             >
               contact me!

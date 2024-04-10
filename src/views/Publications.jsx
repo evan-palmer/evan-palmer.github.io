@@ -7,6 +7,7 @@ import React from 'react';
 import ReactGA from 'react-ga4';
 
 import RalKundeProficiency from '../assets/pdfs/papers/2022_RAL_Kunde_Proficiency.pdf';
+import IcraPalmerUvms from '../assets/pdfs/papers/2024_ICRA_Palmer_UVMS.pdf';
 import Page from '../components/Page';
 import Publication from '../components/Publication';
 
@@ -68,7 +69,7 @@ function Publications() {
       authors: ['Evan Palmer', 'Christopher Holm', 'Geoffrey Hollinger'],
       venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
       year: '2024',
-      toAppear: true,
+      pdf: IcraPalmerUvms,
     },
   ];
 
