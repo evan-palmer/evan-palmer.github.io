@@ -54,10 +54,10 @@ function About() {
             I&apos;m an
             {' '}
             <Link
-              color={useColorModeValue('primary.800')}
+              color={useColorModeValue('primary.600')}
               href="https://ndseg.org/"
               _hover={{
-                color: useColorModeValue('primary.600'),
+                color: useColorModeValue('primary.400'),
               }}
               isExternal
             >
@@ -68,10 +68,10 @@ function About() {
             I&apos;m advised by
             {' '}
             <Link
-              color={useColorModeValue('primary.800')}
+              color={useColorModeValue('primary.600')}
               href="https://engineering.oregonstate.edu/people/geoff-hollinger"
               _hover={{
-                color: useColorModeValue('primary.600'),
+                color: useColorModeValue('primary.400'),
               }}
               isExternal
             >
@@ -98,10 +98,10 @@ function About() {
             to
             {' '}
             <Link
-              color={useColorModeValue('primary.800')}
+              color={useColorModeValue('primary.600')}
               href="mailto:palmeeva@oregonstate.edu"
               _hover={{
-                color: useColorModeValue('primary.600'),
+                color: useColorModeValue('primary.400'),
               }}
             >
               contact me!

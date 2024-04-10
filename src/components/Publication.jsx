@@ -126,8 +126,8 @@ function Venue({
 
 function Publication({ paper }) {
   // Button Colors
-  const btnBgColor = useColorModeValue('primary.800');
-  const btnHoverColor = useColorModeValue('primary.600');
+  const btnBgColor = useColorModeValue('primary.600');
+  const btnHoverColor = useColorModeValue('primary.500');
   const textColor = useColorModeValue('greyscale.50');
 
   return (
