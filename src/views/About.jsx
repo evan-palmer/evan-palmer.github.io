@@ -42,23 +42,24 @@ function ResponsiveText({ children }) {
 
 function About() {
   return (
-    <Page title="👋🏻 Hi, I'm Evan!">
+    <Page title="Hi, I'm Evan!">
       <Grid
         templateColumns={{ md: '1fr', lg: '1fr 1fr' }}
         gap={5}
         marginTop="5vh"
         marginBottom="5vh"
       >
-        <GridItem w="100%">
+        <GridItem w="100%" h="100%">
           <ResponsiveText>
             I&apos;m an
             {' '}
             <Link
-              color={useColorModeValue('primary.600')}
+              color={useColorModeValue('primary.700')}
               href="https://ndseg.org/"
               _hover={{
-                color: useColorModeValue('primary.400'),
+                color: useColorModeValue('primary.500'),
               }}
+              textDecoration="underline"
               isExternal
             >
               NDSEG Fellow
@@ -68,11 +69,12 @@ function About() {
             I&apos;m advised by
             {' '}
             <Link
-              color={useColorModeValue('primary.600')}
+              color={useColorModeValue('primary.700')}
               href="https://engineering.oregonstate.edu/people/geoff-hollinger"
               _hover={{
-                color: useColorModeValue('primary.400'),
+                color: useColorModeValue('primary.500'),
               }}
+              textDecoration="underline"
               isExternal
             >
               Geoff Hollinger
@@ -98,11 +100,12 @@ function About() {
             to
             {' '}
             <Link
-              color={useColorModeValue('primary.600')}
+              color={useColorModeValue('primary.700')}
               href="mailto:palmeeva@oregonstate.edu"
               _hover={{
-                color: useColorModeValue('primary.400'),
+                color: useColorModeValue('primary.500'),
               }}
+              textDecoration="underline"
             >
               contact me!
             </Link>
@@ -114,7 +117,7 @@ function About() {
               src={profile}
               h={{ base: '35vh', md: '25em' }}
               w={{ base: '35vh', md: '25em' }}
-              borderRadius="50%"
+              borderRadius="20%"
             />
           </Center>
         </GridItem>

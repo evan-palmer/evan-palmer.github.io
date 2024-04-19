@@ -21,10 +21,12 @@ function Title({ content }) {
 
 function Page({ title, children }) {
   return (
-    <Flex h="100%" w="82%" flexDirection="column" margin="0 auto">
+    <Flex w="82%" flexDirection="column" margin="0 auto" minHeight="100vh">
       <Navbar />
       <Title content={title} />
-      {children}
+      <Flex flexDirection="column" marginBottom="5vh">
+        {children}
+      </Flex>
       <Footer />
     </Flex>
   );

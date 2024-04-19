@@ -4,31 +4,31 @@ const theme = extendTheme({
   styles: {
     global: {
       '::selection': {
-        backgroundColor: '#08465e',
-        color: '#fafafa',
+        backgroundColor: '#295a6d',
+        color: '#fffcf7',
       },
       /* For Firefox */
       '::-moz-selection': {
-        backgroundColor: '#08465e',
-        color: '#fafafa',
+        backgroundColor: '#295a6d',
+        color: '#fffcf7',
       },
       body: {
-        backgroundColor: '#fafafa',
+        backgroundColor: '#fffcf7',
       },
     },
   },
   colors: {
     primary: {
-      50: '#d5f2ff',
-      100: '#b2dbf0',
-      200: '#93bfd8',
-      300: '#70a4c0',
-      400: '#5690ad',
-      500: '#387c9c',
-      600: '#2a6d8a',
-      700: '#1a5974',
-      800: '#08465e',
-      900: '#003146',
+      50: '#dbf2ff',
+      100: '#badae8',
+      200: '#9bbfd1',
+      300: '#79a4b9',
+      400: '#5f90a6',
+      500: '#447d94',
+      600: '#376e83',
+      700: '#295a6d',
+      800: '#1c4758',
+      900: '#083240',
     },
     secondary: {
       50: '#ffe2c7',
@@ -77,6 +77,9 @@ const theme = extendTheme({
       700: '#616161',
       800: '#424242',
       900: '#212121',
+    },
+    tan: {
+      50: 'fffcf7',
     },
   },
   fonts: {

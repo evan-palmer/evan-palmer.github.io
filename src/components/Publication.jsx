@@ -20,6 +20,7 @@ function PublicationButton({
         _hover={{
           backgroundColor: hoverColor,
         }}
+        rounded="full"
         variant="solid"
         size="sm"
         marginTop="7px"
@@ -27,6 +28,7 @@ function PublicationButton({
           base: 'calc(12px + 6 * ((100vw - 320px) / (680)))',
           md: '1rem',
         }}
+        px={{ base: 3.5, md: 4 }}
       >
         {label}
       </Button>
@@ -46,7 +48,7 @@ function Title({ children }) {
       }}
       fontSize={{
         base: 'calc(16px + 6 * ((100vw - 320px) / (680)))',
-        md: '1.3rem',
+        md: '1.25rem',
       }}
       fontWeight="500"
       color={useColorModeValue('greyscale.900')}
@@ -75,7 +77,7 @@ function Authors({ children }) {
     }
     return (
       <span key={index}>
-        <Text as="span" fontWeight={isMe ? '600' : '400'}>
+        <Text as="span" fontWeight={isMe ? '500' : '400'}>
           {author}
         </Text>
         ,
@@ -87,13 +89,14 @@ function Authors({ children }) {
   return (
     <Text
       fontSize={{
-        base: 'calc(14px + 6 * ((100vw - 320px) / (680)))',
-        md: '1.2rem',
+        base: 'calc(12px + 6 * ((100vw - 320px) / (680)))',
+        md: '1.05rem',
       }}
       lineHeight={{
-        base: '24px',
-        md: '30px',
+        base: '22px',
+        md: '24px',
       }}
+      textColor={useColorModeValue('greyscale.700')}
     >
       {formatAuthorsList(children, 'Evan Palmer')}
     </Text>
@@ -106,13 +109,14 @@ function Venue({
   return (
     <Text
       fontSize={{
-        base: 'calc(14px + 6 * ((100vw - 320px) / (680)))',
-        md: '1.2rem',
+        base: 'calc(12px + 6 * ((100vw - 320px) / (680)))',
+        md: '1.05rem',
       }}
       lineHeight={{
         base: '24px',
         md: '30px',
       }}
+      textColor={useColorModeValue('greyscale.700')}
     >
       <i>{venue}</i>
       ,
@@ -126,9 +130,9 @@ function Venue({
 
 function Publication({ paper }) {
   // Button Colors
-  const btnBgColor = useColorModeValue('primary.600');
-  const btnHoverColor = useColorModeValue('primary.500');
-  const textColor = useColorModeValue('greyscale.50');
+  const btnBgColor = useColorModeValue('primary.700');
+  const btnHoverColor = useColorModeValue('primary.600');
+  const textColor = '#fffcf7';
 
   return (
     <Box>

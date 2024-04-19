@@ -25,7 +25,7 @@ function NavLink({ link }) {
   const location = useLocation();
   const isActive = link.dest === location.pathname;
 
-  const backgroundColor = useColorModeValue('greyscale.50');
+  const backgroundColor = useColorModeValue('tan.50');
   const inactiveTextColor = useColorModeValue('greyscale.700');
   const activeTextColor = useColorModeValue('greyscale.900');
 
@@ -60,7 +60,7 @@ function Resume() {
   return (
     <Button
       as="a"
-      bg={useColorModeValue('greyscale.50', 'primary.400')}
+      bg={useColorModeValue('tan.50', 'primary.400')}
       textColor={useColorModeValue('greyscale.700')}
       fontWeight={400}
       _hover={{
@@ -69,7 +69,7 @@ function Resume() {
         transitionTimingFunction: 'ease-in-out',
       }}
       _active={{
-        bg: useColorModeValue('greyscale.50'),
+        bg: useColorModeValue('tan.50'),
       }}
       fontSize={{
         base: 'calc(16px + 4 * ((100vw - 320px) / (680)))',

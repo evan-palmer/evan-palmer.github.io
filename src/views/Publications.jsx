@@ -80,7 +80,7 @@ function Publications() {
   });
 
   return (
-    <Page title="✍🏻 Check out my publications">
+    <Page title="Check out my publications">
       <Section title="Journal Articles" papers={JournalPapers} />
       <Section title="Conference Papers" papers={ConferencePapers} />
     </Page>

@@ -27,8 +27,8 @@ function SocialLink({ href, icon: Icon, size = 25 }) {
 function Footer() {
   return (
     <Flex
-      bg={useColorModeValue('greyscale.50')}
-      marginTop="5vh"
+      bg={useColorModeValue('tan.50')}
+      marginTop="auto"
       marginBottom="4vh"
       alignItems="start"
     >
