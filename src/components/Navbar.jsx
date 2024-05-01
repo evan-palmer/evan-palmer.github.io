@@ -10,7 +10,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import React from 'react';
-import ReactGA from 'react-ga4';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 import Logo from '../assets/images/logo.svg';
@@ -78,13 +77,6 @@ function Resume() {
       marginLeft={{ base: '3vw' }}
       padding={0}
       href={Cv}
-      onClick={
-        ReactGA.send({
-          hitType: 'pageview',
-          page: '/resume',
-          title: 'Resume',
-        })
-      }
     >
       Resume
     </Button>

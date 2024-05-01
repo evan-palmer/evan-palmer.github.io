@@ -8,18 +8,11 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import React from 'react';
-import ReactGA from 'react-ga4';
 
 import profile from '../assets/images/profile.jpg';
 import Page from '../components/Page';
 
 function ResponsiveText({ children }) {
-  ReactGA.send({
-    hitType: 'pageview',
-    page: '/',
-    title: 'About',
-  });
-
   return (
     <Text
       fontSize={{

@@ -4,7 +4,6 @@ import {
   List, Text,
 } from '@chakra-ui/react';
 import React from 'react';
-import ReactGA from 'react-ga4';
 
 import RalKundeProficiency from '../assets/pdfs/papers/2022_RAL_Kunde_Proficiency.pdf';
 import IcraPalmerUvms from '../assets/pdfs/papers/2024_ICRA_Palmer_UVMS.pdf';
@@ -72,12 +71,6 @@ function Publications() {
       pdf: IcraPalmerUvms,
     },
   ];
-
-  ReactGA.send({
-    hitType: 'pageview',
-    page: '/',
-    title: 'Publications',
-  });
 
   return (
     <Page title="Check out my publications">
