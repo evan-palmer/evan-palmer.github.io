@@ -15,7 +15,7 @@ const ConferencePapers = [
     title:
       'Angler: An Autonomy Framework for Intervention Tasks with Lightweight Underwater Vehicle Manipulator Systems',
     authors: ['Evan Palmer', 'Christopher Holm', 'Geoffrey Hollinger'],
-    venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
+    venue: 'IEEE International Conference on Robotics and Automation ( ICRA)',
     year: '2024',
     pdf: IcraPalmerUvms,
   },
