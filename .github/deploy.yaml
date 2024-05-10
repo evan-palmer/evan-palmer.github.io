@@ -7,7 +7,7 @@ on:
 
 jobs:
   docs:
-    name: Build and deploy documentation
+    name: Build and deploy website
     runs-on: ubuntu-latest
 
     permissions:
