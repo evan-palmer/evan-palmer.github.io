@@ -5,10 +5,10 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 
-import RalKundeProficiency from '../assets/pdfs/papers/2022_RAL_Kunde_Proficiency.pdf';
-import IcraPalmerUvms from '../assets/pdfs/papers/2024_ICRA_Palmer_UVMS.pdf';
 import Page from '../components/Page';
 import Publication from '../components/Publication';
+import ConferencePapers from '../publications/Conference';
+import JournalPapers from '../publications/Journal';
 
 function Section({ title, papers }) {
   return (
@@ -49,29 +49,6 @@ function Section({ title, papers }) {
 }
 
 function Publications() {
-  const JournalPapers = [
-    {
-      title:
-        'Recognizing User Proficiency In Piloting Small Unmanned Aerial Vehicles (SUAV)',
-      authors: ['Siya Kunde', 'Evan Palmer', 'Britany Duncan'],
-      venue: 'IEEE Robotics and Automation Letters (RA-L)',
-      year: '2022',
-      doi: 'https://ieeexplore.ieee.org/document/9681275',
-      pdf: RalKundeProficiency,
-    },
-  ];
-
-  const ConferencePapers = [
-    {
-      title:
-        'Angler: An Autonomy Framework for Intervention Tasks with Lightweight Underwater Vehicle Manipulator Systems',
-      authors: ['Evan Palmer', 'Christopher Holm', 'Geoffrey Hollinger'],
-      venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
-      year: '2024',
-      pdf: IcraPalmerUvms,
-    },
-  ];
-
   return (
     <Page title="Check out my publications">
       <Section title="Journal Articles" papers={JournalPapers} />
