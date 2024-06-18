@@ -9,7 +9,7 @@ const ConferencePapers = [
     venue: 'OCEANS',
     year: '2024',
     pdf: OceansKolanoCoupling,
-    underReview: true,
+    toAppear: true,
   },
   {
     title:
