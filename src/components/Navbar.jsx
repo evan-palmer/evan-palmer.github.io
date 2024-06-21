@@ -78,7 +78,7 @@ function Resume() {
       padding={0}
       href={Cv}
     >
-      Resume
+      CV
     </Button>
   );
 }
