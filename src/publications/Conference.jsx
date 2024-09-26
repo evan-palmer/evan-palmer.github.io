@@ -9,7 +9,6 @@ const ConferencePapers = [
     venue: 'OCEANS',
     year: '2024',
     pdf: OceansKolanoCoupling,
-    toAppear: true,
   },
   {
     title:
@@ -18,6 +17,7 @@ const ConferencePapers = [
     venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
     year: '2024',
     pdf: IcraPalmerUvms,
+    doi: 'https://ieeexplore.ieee.org/document/10610184'
   },
 ];
 
