@@ -9,6 +9,7 @@ const ConferencePapers = [
     venue: 'OCEANS',
     year: '2024',
     pdf: OceansKolanoCoupling,
+    doi: 'https://ieeexplore.ieee.org/document/10754137',
   },
   {
     title:
