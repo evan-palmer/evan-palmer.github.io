@@ -59,7 +59,7 @@ function About() {
             </Link>
             {' '}
             and a Robotics Ph.D. Student at Oregon State University where
-            I&apos;m advised by
+            I&apos;m co-advised by
             {' '}
             <Link
               color={useColorModeValue('primary.700')}
@@ -72,9 +72,24 @@ function About() {
             >
               Geoff Hollinger
             </Link>
-            . The goal of my research is to create safe motion planning and
-            control algorithms for robots that operate in challenging
-            environments and to deploy these algorithms into the real world.
+            {' '}
+            and
+            {' '}
+            <Link
+              color={useColorModeValue('primary.700')}
+              href="https://engineering.oregonstate.edu/people/ross-hatton"
+              _hover={{
+                color: useColorModeValue('primary.500'),
+              }}
+              textDecoration="underline"
+              isExternal
+            >
+              Ross Hatton
+            </Link>
+            . The goal of my research is to create motion planning and control
+            algorithms for robots that operate in challenging environments. My
+            research lies at the intersection of optimization, machine learning,
+            and geometric mechanics.
           </ResponsiveText>
           <ResponsiveText>
             If I&apos;m not in the lab working on my latest idea, you can find me
