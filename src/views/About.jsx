@@ -86,10 +86,9 @@ function About() {
             >
               Ross Hatton
             </Link>
-            . The goal of my research is to create motion planning and control
-            algorithms for robots that operate in challenging environments. My
-            research lies at the intersection of optimization, machine learning,
-            and geometric mechanics.
+            . The goal of my research is to leverage optimization, machine learning,
+            and geometric mechanics to create motion planning and control
+            algorithms for robots that operate in challenging environments.
           </ResponsiveText>
           <ResponsiveText>
             If I&apos;m not in the lab working on my latest idea, you can find me
