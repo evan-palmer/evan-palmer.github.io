@@ -9,6 +9,7 @@ import Page from '../components/Page';
 import Publication from '../components/Publication';
 import ConferencePapers from '../publications/Conference';
 import JournalPapers from '../publications/Journal';
+import WorkshopPapers from '../publications/Workshop';
 
 function Section({ title, papers }) {
   return (
@@ -37,7 +38,7 @@ function Section({ title, papers }) {
               }}
               marginRight={{ base: '0.9rem', md: '1.1rem' }}
             >
-              {index + 1}
+              {papers.length - index}
               .
             </Text>
             <Publication key={index} paper={paper} />
@@ -53,6 +54,7 @@ function Publications() {
     <Page title="Check out my publications">
       <Section title="Journal Articles" papers={JournalPapers} />
       <Section title="Conference Papers" papers={ConferencePapers} />
+      <Section title="Workshop Papers" papers={WorkshopPapers} />
     </Page>
   );
 }
