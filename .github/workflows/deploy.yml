@@ -25,7 +25,7 @@ jobs:
       - name: Setup npm
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: package-lock.json
 
@@ -35,10 +35,13 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Add SPA fallback for client-side routing
+        run: cp build/client/index.html build/client/404.html
+
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./build/client
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
