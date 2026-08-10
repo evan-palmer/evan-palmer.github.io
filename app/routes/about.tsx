@@ -21,9 +21,12 @@ export default function About() {
         <div>
           <p className="font-semibold text-greyscale-900">Ph.D. Student</p>
           <p className="text-sm text-greyscale-600">Robotics, Oregon State University</p>
-          <ul className="mt-2 list-disc space-y-0 pl-5 text-sm font-light text-greyscale-600">
+          <ul className="mt-2 text-sm font-light text-greyscale-600">
             {interests.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} className="flex gap-2">
+                <span className="font-mono text-primary-700">→</span>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </div>
