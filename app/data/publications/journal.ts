@@ -9,6 +9,7 @@ const journalPapers: Paper[] = [
     authors: ['Evan Palmer', 'Ross L. Hatton', 'Geoffrey A. Hollinger'],
     venue: 'Under Review',
     year: '2026',
+    doi: 'https://doi.org/10.48550/arXiv.2608.08356',
     pdf: PalmerStochastic,
   },
   {
