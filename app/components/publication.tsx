@@ -30,7 +30,7 @@ export default function Publication({ paper }: { paper: Paper }) {
       <p className="text-sm leading-snug font-medium text-greyscale-900">
         {paper.title}
       </p>
-      <p className="mt-1 text-xs leading-relaxed text-greyscale-600">
+      <p className="mt-0.5 text-xs leading-relaxed text-greyscale-600">
         <Authors authors={paper.authors} />
         {' — '}
         <i>{paper.venue}</i>
