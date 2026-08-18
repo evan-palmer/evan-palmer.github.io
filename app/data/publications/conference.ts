@@ -10,6 +10,7 @@ const conferencePapers: Paper[] = [
     venue: 'OCEANS',
     year: '2025',
     pdf: OceansAgrawalUnderwater,
+    doi: 'https://ieeexplore.ieee.org/document/11104649',
   },
   {
     title: 'The Coupling Effect: Experimental Validation of the Fusion of Fossen and Featherstone to Simulate UVMS Dynamics in Julia',

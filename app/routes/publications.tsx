@@ -2,6 +2,7 @@ import Page from '~/components/page';
 import Publication, { type Paper } from '~/components/publication';
 import conferencePapers from '~/data/publications/conference';
 import journalPapers from '~/data/publications/journal';
+import preprintPapers from '~/data/publications/preprint';
 import workshopPapers from '~/data/publications/workshop';
 
 function Section({ title, papers }: { title: string; papers: Paper[] }) {
@@ -25,6 +26,7 @@ export default function Publications() {
   return (
     <Page title="Publications">
       <div className="flex flex-col gap-10">
+        <Section title="Preprints" papers={preprintPapers} />
         <Section title="Journal Articles" papers={journalPapers} />
         <Section title="Conference Papers" papers={conferencePapers} />
         <Section title="Workshop Papers" papers={workshopPapers} />
